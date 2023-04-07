@@ -5,7 +5,8 @@ const pnumber = document.querySelector("#pnumber");
 const email  =document.querySelector("#emailId");
 
 const btn = document.querySelector(".button");
-btn.addEventListener("click",()=>{
+btn.addEventListener("click",(e)=>{
+	e.preventDefault();
 	alert(`First Name: ${fname.value}\nLast Name: ${lname.value}\nPhone Number: ${pnumber.value}\nEmail ID: ${email.value}`);
 	// alert("First Name: "+lname.value);
 })
